@@ -42,7 +42,24 @@ describe("Test User Input", function() {
     var expected = false;
     assert(actual == expected);
   });
+
+
+  it("Checks if the user enters a String", function(){
+      var n = "five"
+      var actual = isprime(n);
+      var expected = false;
+      assert(actual==expected);
+  });
+
+
+  it("Checks for null", function(){
+      var n = null;
+      var actual = isprime(null);
+      var expected = false;
+      assert(actual==expected)
+  });
   
+    
   });
 
   
