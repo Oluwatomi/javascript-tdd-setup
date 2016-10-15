@@ -3,22 +3,27 @@
 var chai = require('chai');
 var assert = chai.assert;
 
-var lib = require('./lib/library.js');
+var lib = require('./lib/sum_of_primes.js');
 
-describe("Test that constants are computed properly", function() {
-  it("should give 10, 4 for constants 2, 5 as a and n respectively", function() {
-    assert(
-      lib.compareCoefficients(lib.quadraticDerivative(2, 5), { a: 10, n: 4 })
-    );
+describe("Test User Input", function() {
+
+  it("Checks if the user enters a negative number", function() {
+      var n = -1;
+      var actual = isprime(n);
+      var expected = false;
+      assert( actual == expected);
   });
-  it("should give 2, 1 for constants 1, 2 as a and n respectively", function() {
-    assert(
-      lib.compareCoefficients(lib.quadraticDerivative(1, 2), { a: 2, n: 1 })
-    );
+
+  it("Checks if the user enter 1 ", function(){
+      var n = 1;
+      var actual = isprime(n);
+      var expected = false;
+      assert(actual == expected);
   });
-  it("should give 8, 1 for constants 4, 2 as a and n respectively", function() {
-    assert(
-      lib.compareCoefficients(lib.quadraticDerivative(4, 2), { a: 8, n: 1 })
-    );
+
+
+
   });
-});
+
+  
+  
