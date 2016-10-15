@@ -58,8 +58,30 @@ describe("Test User Input", function() {
       var expected = false;
       assert(actual==expected)
   });
-  
-    
+
+
+    it("Checks if the user enters zero", function(){
+      var n = 0;
+      var actual = isprime(0);
+      var expected = false;
+      assert(actual==expected);
+  });
+
+
+  it("Checks if the user enters an array",function(){
+      var n = [4,5,9];
+      var actual = isprime(n);
+      var expected = false;
+      assert(actual==expected);
+  });
+
+  it("Checks to see if the user enters a boolean", function(){
+      var n = true;
+      var actual = isprime(n);
+      var expected = false;
+      assert(actual==expected);
+  });
+
   });
 
   
