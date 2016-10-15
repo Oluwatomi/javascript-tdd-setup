@@ -85,4 +85,35 @@ describe("Test User Input", function() {
   });
 
   
-  
+  describe("Test Correctness of Sum of Primes Method", function() {
+
+  it("Should return 0 for an input of 1", function() {
+    var n = 1;
+    var actual = sumofprime(n);
+    var expected = 0;
+    assert(actual=expected);
+  });
+
+  it("Should return 0 for an input of 1", function() {
+    var n = -1;
+    var actual = sumofprime(n);
+    var expected = "Invalid Input";
+    assert(actual=expected);
+  });
+
+  it("Should return 14 for an input of 10", function() {
+    var n = 10;
+    var actual = sumofprime(n);
+    var expected = 17;
+    assert(actual=expected);
+  });
+
+  it("Should return 1060 for an input of 100", function(){
+    var n = 100;
+    var actual = sumofprime(n);
+    var expected = 1060;
+    assert(actual==expected);
+  });
+
+
+  });
